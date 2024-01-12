@@ -1,7 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-import TableOne from "@/components/Tables/TableOne";
-import TableThree from "@/components/Tables/TableThree";
-import TableTwo from "@/components/Tables/TableTwo";
+import Node from "@/components/Tables/Node";
+import Revenue from "@/components/Tables/Revenue";
+import Cost from "@/components/Tables/Cost";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
@@ -16,9 +16,9 @@ const TablesPage = () => {
       <Breadcrumb pageName="Tables" />
 
       <div className="flex flex-col gap-10">
-        <TableOne />
-        <TableTwo />
-        <TableThree />
+        <Node />
+        <Cost />
+        <Revenue />
       </div>
     </>
   );

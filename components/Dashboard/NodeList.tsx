@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import TableOne from "../Tables/TableOne";
+import Node from "../Tables/Node";
 import CardDataStats from "../CardDataStats";
 
 const NodeList: React.FC = () => {
@@ -58,7 +58,7 @@ const NodeList: React.FC = () => {
         <ChartTwo />
         <ChartThree /> */}
         <div className="col-span-12 xl:col-span-8">
-          <TableOne />
+          <Node />
         </div>
         
       </div>

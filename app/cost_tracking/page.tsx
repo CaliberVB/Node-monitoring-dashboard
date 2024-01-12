@@ -1,4 +1,4 @@
-import NodeList from "@/components/Dashboard/NodeList";
+import CostTrack from "@/components/Dashboard/CostTrack";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <NodeList />
+      <CostTrack />
     </>
   );
 }

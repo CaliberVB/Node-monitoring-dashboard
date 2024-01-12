@@ -6,10 +6,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
+    "/wallet_management/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/wallet_management/page.js"
     ],
     "/cost_tracking/page": [
       "static/chunks/webpack.js",
@@ -21,10 +21,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/revenue_tracking/page.js"
     ],
-    "/wallet_management/page": [
+    "/helper/tables/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/wallet_management/page.js"
+      "static/chunks/app/helper/tables/page.js"
     ]
   }
 }
