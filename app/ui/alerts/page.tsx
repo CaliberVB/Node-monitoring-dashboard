@@ -2,7 +2,7 @@ import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Alerts Page | Next.js E-commerce Dashboard Template",
+  title: "Alerts Page ",
   description: "This is Alerts page for Caliber's node monitoring dashboard Next.js",
   // other metadata
 };

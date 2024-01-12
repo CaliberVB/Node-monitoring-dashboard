@@ -11,7 +11,7 @@ import SwitcherTwo from "@/components/Switchers/SwitcherTwo";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Form Elements Page | Next.js E-commerce Dashboard Template",
+  title: "Form Elements Page ",
   description: "This is Form Elements page for Caliber's node monitoring dashboard Next.js",
   // other metadata
 };

@@ -1,46 +1,38 @@
 import { BRAND } from "@/types/brand";
 import Image from "next/image";
 
-const brandData: BRAND[] = [
+const nodeData: BRAND[] = [
   {
-    logo: "/images/brand/brand-01.svg",
-    name: "Google",
+    logo: "",
+    name: "Gnosis",
     visitors: 3.5,
     revenues: "5,768",
     sales: 590,
-    conversion: 4.8,
+    conversion: 10000000,
   },
   {
-    logo: "/images/brand/brand-02.svg",
-    name: "Twitter",
+    logo: "",
+    name: "Chromia",
     visitors: 2.2,
     revenues: "4,635",
     sales: 467,
-    conversion: 4.3,
+    conversion: 10000000,
   },
   {
-    logo: "/images/brand/brand-03.svg",
-    name: "Github",
+    logo: "",
+    name: "Xai.games",
     visitors: 2.1,
     revenues: "4,290",
     sales: 420,
-    conversion: 3.7,
+    conversion: 10000000,
   },
   {
-    logo: "/images/brand/brand-04.svg",
-    name: "Vimeo",
-    visitors: 1.5,
-    revenues: "3,580",
-    sales: 389,
-    conversion: 2.5,
-  },
-  {
-    logo: "/images/brand/brand-05.svg",
-    name: "Facebook",
+    logo: "",
+    name: "Mev-boost",
     visitors: 3.5,
     revenues: "6,768",
     sales: 390,
-    conversion: 4.2,
+    conversion: 10000000,
   },
 ];
 
@@ -48,42 +40,42 @@ const TableOne = () => {
   return (
     <div className="rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
       <h4 className="mb-6 text-xl font-semibold text-black dark:text-white">
-        Top Channels
+        Node list
       </h4>
 
       <div className="flex flex-col">
         <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5">
           <div className="p-2.5 xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Source
+              Node name
             </h5>
           </div>
           <div className="p-2.5 text-center xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Visitors
+              Health
             </h5>
           </div>
           <div className="p-2.5 text-center xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Revenues
+              Events
             </h5>
           </div>
           <div className="hidden p-2.5 text-center sm:block xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Sales
+              Block height
             </h5>
           </div>
           <div className="hidden p-2.5 text-center sm:block xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Conversion
+              No. Tx
             </h5>
           </div>
         </div>
 
-        {brandData.map((brand, key) => (
+        {nodeData.map((brand, key) => (
           <div
             className={`grid grid-cols-3 sm:grid-cols-5 ${
-              key === brandData.length - 1
+              key === nodeData.length - 1
                 ? ""
                 : "border-b border-stroke dark:border-strokedark"
             }`}
@@ -111,7 +103,7 @@ const TableOne = () => {
             </div>
 
             <div className="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
-              <p className="text-meta-5">{brand.conversion}%</p>
+              <p className="text-meta-5">{brand.conversion}</p>
             </div>
           </div>
         ))}
