@@ -1,6 +1,7 @@
 {
   "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/chart/page": "app/chart/page.js",
-  "/ui/buttons/page": "app/ui/buttons/page.js"
+  "/wallet_management/page": "app/wallet_management/page.js",
+  "/revenue_tracking/page": "app/revenue_tracking/page.js",
+  "/cost_tracking/page": "app/cost_tracking/page.js"
 }

@@ -1,8 +1,8 @@
 // File: /Users/zinklee/caliber/Node-monitoring-dashboard/app/chart/page.tsx
-import * as entry from '../../../../app/chart/page.js'
+import * as entry from '../../../../app/helper/chart/page.jsx'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/chart/page.js')
+type TEntry = typeof import('../../../../app/helper/chart/page.jsx')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

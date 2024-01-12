@@ -11,20 +11,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/chart/page": [
+    "/cost_tracking/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/chart/page.js"
+      "static/chunks/app/cost_tracking/page.js"
     ],
-    "/ui/alerts/page": [
+    "/revenue_tracking/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/ui/alerts/page.js"
+      "static/chunks/app/revenue_tracking/page.js"
     ],
-    "/ui/buttons/page": [
+    "/wallet_management/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/ui/buttons/page.js"
+      "static/chunks/app/wallet_management/page.js"
     ]
   }
 }
