@@ -1,0 +1,84 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model NodeInfo {
+  nodeId     Int      @id @default(autoincrement())
+  nodeName   String
+  blockchain String
+  nodeStatus String
+  location   String
+  costs      CostTracking[]
+  wallets    Wallet[]
+  accessLogs AccessLog[]
+  apiLogs    APILog[]
+  revenues   Revenue[]
+}
+
+model CostTracking {
+  costId      Int      @id @default(autoincrement())
+  nodeId      Int
+  occurrence  String
+  costType    String
+  amount      Float
+  date        DateTime
+  description String?
+  nodeInfo    NodeInfo @relation(fields: [nodeId], references: [nodeId])
+}
+
+model Wallet {
+  walletId     Int         @id @default(autoincrement())
+  nodeId       Int
+  balance      Float
+  currencyType String
+  nodeInfo     NodeInfo    @relation(fields: [nodeId], references: [nodeId])
+  transactions Transaction[]
+}
+
+model Transaction {
+  txnId        Int      @id @default(autoincrement())
+  walletId     Int
+  amount       Float
+  txnType      String
+  timestamp    DateTime
+  description  String?
+  wallet       Wallet   @relation(fields: [walletId], references: [walletId])
+}
+
+model AccessLog {
+  logId       Int      @id @default(autoincrement())
+  userId      String
+  action      String
+  date        DateTime
+  nodeId      Int?
+  description String?
+  nodeInfo    NodeInfo? @relation(fields: [nodeId], references: [nodeId])
+}
+
+model APILog {
+  apiLogId       Int      @id @default(autoincrement())
+  apiName        String
+  nodeId         Int
+  action         String
+  date           DateTime
+  responseStatus String
+  nodeInfo       NodeInfo @relation(fields: [nodeId], references: [nodeId])
+}
+
+model Revenue {
+  revenueId    Int      @id @default(autoincrement())
+  nodeId       Int
+  amount       Float
+  sourceType   String
+  date         DateTime
+  currencyType String
+  nodeInfo     NodeInfo @relation(fields: [nodeId], references: [nodeId])
+}

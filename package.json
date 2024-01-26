@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "5.8.1",
     "@react-jvectormap/core": "^1.0.4",
     "@react-jvectormap/unitedstates": "^1.0.1",
     "@types/node": "20.4.8",
@@ -21,6 +22,7 @@
     "jsvectormap": "^1.5.3",
     "next": "13.4.12",
     "postcss": "8.4.27",
+    "prisma": "^5.8.1",
     "react": "18.2.0",
     "react-apexcharts": "^1.4.1",
     "react-dom": "18.2.0",
